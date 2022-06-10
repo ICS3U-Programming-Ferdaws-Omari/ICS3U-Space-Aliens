@@ -7,14 +7,12 @@
 name: GitHub's Super Linter
 on: push
 
-
 jobs:
- run-linters:
-   name: GitHub's Super Linter
-   runs-on: ubuntu-latest
+  run-linters:
+    name: GitHub's Super Linter
+    runs-on: ubuntu-latest
 
-
-   steps:
+    steps:
       - name: Check out Git repository
         uses: actions/checkout@master
     
