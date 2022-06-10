@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+
+# Created by: Ferdaws
+# Created on: June 2022
+# This program is the "Space Aliens" program on the PyBadge
 import ugame
 import stage
 
