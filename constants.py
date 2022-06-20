@@ -1,23 +1,33 @@
-#!/usr/bin/env python3
-
+#!/usr/bin/env python
 # Created by: Ferdaws
-# Created on: June 2022
-# This is the constants file for CPT
+# Created on June 2022
+# This constants file is for the space alien game
 
-# PyBadge screen size is 160 x 128
-# set the x max
+# PyBadge screen size is 160x128 and sprites are 16x16
 SCREEN_X = 160
-# set the y max
 SCREEN_Y = 128
-# set the grid x max
 SCREEN_GRID_X = 10
-# set the grid y max
 SCREEN_GRID_Y = 8
-# set the sprite max size
 SPRITE_SIZE = 16
-# set the maximum aliens
 TOTAL_NUMBER_OF_ALIENS = 5
-# set the max FPS
-FPS = 60
-# set the sprite's movement speed
+TOTAL_NUMBER_OF_LASERS = 5
+SHIP_SPEED = 1
+ALIEN_SPEED = 1
+LASER_SPEED = 2
+OFF_SCREEN_X = -100
+OFF_SCREEN_Y = -100
+OFF_TOP_SCREEN = -1 & SPRITE_SIZE
+OFF_BOTTOM_SCREEN = SCREEN_Y + SPRITE_SIZE
+FPS = 30
 SPRITE_MOVEMENT_SPEED = 1
+
+# using button for state
+button_state = {
+    "button_up": "up",
+    "button_just_pressed": "just pressed",
+    "button_still_pressed": "still pressed",
+    "button_released": "released"
+}
+
+# new pallete for red filled text
+RED_PALETTE = (b'\xff\xff\x00\x22\xcey\x22\xff\xff\xff\xff\xff\xff\xff\xff\xff'b'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff')
